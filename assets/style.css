@@ -1,0 +1,145 @@
+/*  FONTS  */
+
+@font-face {
+    font-family: "QuickSand";
+    src: url("/assets/fonts/Quicksand-Regular.ttf")
+}
+
+@font-face {
+    font-family: "Pacifico";
+    src: url("/assets/fonts/Pacifico-Regular.ttf")
+}
+
+
+/*  GENERAL  */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    font-family: "QuickSand";
+    color: #333333;
+}
+
+li {
+    list-style-type: none;
+}
+
+h1 {
+    font-family: "Pacifico";
+    font-size: 48px;
+    color: #333333;
+    line-height: 55px;
+    font-weight: 300;
+}
+
+/*  MENU  */
+
+header {
+    background-color: #ffffff;
+    height: 78px;
+    box-shadow: #FFDEE2 0px 4px 6px 1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80vw;
+}
+
+.navbar-logo {
+    width: 217px;
+    height: 58px;
+}
+
+
+.navbar ul {
+    display: flex;
+    align-items: center;
+    margin-right: 35px;
+}
+
+.navbar ul li {
+   padding: 10px;
+}
+
+.navbar ul li a {
+    font-family: "QuickSand";
+    color: #333333;
+}
+
+ .navbar ul li a img {
+    padding: 0px 5px;
+ }
+
+
+ 
+/*  HOME SECTION  */
+
+
+ .home {
+    background-color: #FFFDF3;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
+
+ .home-container {
+    width: 79vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+ }
+
+ .home-text {
+    width: 500px;
+ }
+
+
+
+ .home p {
+    font-family: "QuickSand";
+    font-size: 18px;
+    margin: 20px 0px 50px 0px;
+ }
+
+.home-buttons {
+    display: flex;
+}
+
+.home .gallery-button {
+    width: 150px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #FFDEE2;
+    border: 1px solid #F991BE;
+    border-radius: 6px;
+    font-size: 16;
+    margin-right: 20px;
+    font-weight: 600;
+}
+
+
+.home .contact-button {
+    width: 150px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #FFFFFF;
+    border: 1px solid #333333;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 600;
+}
