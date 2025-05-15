@@ -11,8 +11,8 @@
 
 <body>
     <header>
-        <nav>
-            <img src="assets/img/logo/logo.png" alt="logo">
+        <nav class="navbar">
+            <img src="assets/img/logo/logo.png" alt="logo" class="navbar-logo">
 
             <ul>
                 <li><a href="#home"><img src="assets/img/menu/menu_home.svg" alt="icone-home">Home</a></li>
@@ -23,18 +23,25 @@
         </nav>
     </header>
     <main>
-        <section id="home">
-            <div>
-                <h1>Feito à mão com amor e carinho!</h1>
-                <p>Bem-vindo ao Alecrim Crochês, onde cada ponto conta uma história e cada criação vem do coração.</p>
-                <div>
-                    <a href="#gallery">Ver Galeria</a>
-                    <a href="#contact">Fale comigo</a>
-                </div>
-            </div>
+        <section id="home" class="home">
+            <div class="home-container">
+                <div class="home-text">
+                    <h1>Feito à mão com amor e carinho!</h1>
+                    <p>Bem-vindo ao Alecrim Crochês, onde cada ponto conta uma história e cada criação vem do coração.</p>
 
-            <div>
-                <img src="assets/img/home/home.png" alt="imagem-home">
+                    <div class="home-buttons">
+                        <div class="gallery-button"> 
+                            <a href="#gallery">Ver Galeria</a>
+                        </div>
+                        <div class="contact-button"> 
+                            <a href="#contact">Fale comigo</a>
+                        </div>   
+                    </div>  
+                </div>
+
+                <div class="home-image">
+                    <img src="assets/img/home/home.png" alt="imagem-home" width="650" >
+                </div>
             </div>
         </section>
         <section id="gallery">
