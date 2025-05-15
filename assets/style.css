@@ -152,6 +152,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
 }
  
 .gallery-container{
@@ -191,23 +192,85 @@ header {
     display: flex;
     flex-direction: row;
     gap: 100px;
+   
 }
  
 .gallery-products-card {
     width: 282px;
-    background-color: red;
+    height: 400px;
+    position: relative;
+    align-items: center;
+   
+   
 }
  
 .gallery-products-card  .image-card{
     width: 282px;
-    height: 100px;
-    background-color: #000;
+    height: 250px;
+    border-radius: 0;
+    background-image: url(/assets/img/galeria/galeria_buques.png);
+    background-size: cover;
+    text-align: center;
 }
  
 .gallery-products-card .card-text{
     margin: 0;
     box-shadow: 0px 5px 5px 0px rgba(219, 119, 139 , 1);
     background-color: #ffffff;
-    height: 80px;
+    height: 100px;
     border-radius:  0px 0px 12px  12px ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+    padding-left: 16px;
+ 
+}
+ 
+.gallery-products-card .card-text h4 {
+    font-family: "QuickSand";
+    font-size: 20px;
+    color: #333333;
+}
+ 
+.gallery-products-card .card-text p {
+    font-family: "QuickSand";
+    font-weight: 400;
+    font-size: 16px;
+    color: #333333;
+}
+ 
+.gallery-products-card .card-button{
+   position: absolute;
+   left: 74px;
+   bottom: 15px;
+   background-color: #FFDEE2;
+   font-family: "QuickSand";
+   font-weight: 600;
+   font-size: 16px;
+   border: 1px solid #DB778B;
+   width: 123px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   padding: 10px;
+   border-radius: 6px ;
+}
+ 
+.gallery-products-card .card-button img{
+    position: absolute;
+    bottom: -9px;
+    right: -9px;
+}
+ 
+.gallery-image1{
+    position: absolute ;
+    left: 0px;
+    bottom: 0px;
+}
+ 
+.gallery-image2{
+    position: absolute ;
+    right: 0px;
+    bottom: 0px;
 }
