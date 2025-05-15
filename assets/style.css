@@ -204,6 +204,7 @@ header {
     flex-direction: column;
     text-align: justify;
     gap: 30px;
+    font-family: "Quicksand";
 }
 
 
@@ -213,7 +214,23 @@ header {
     font-weight: 200;
 }
 
-.about-section-text p {
-    font-family: "Quicksand";
-    font-size: 16px;
+.about-section-quote {
+    border-left: 3px solid #F991BE;
+    height: 45px;
+    padding-left: 20px;
+    width: 100%;
+    position: relative;
 }
+
+
+.about-section-quote p {
+    font-family: "Quicksand";
+    font-size: 14px;
+}
+
+.about-section-quote-author {
+    position: absolute;
+    right: 0px;
+    bottom: -25px;
+}
+
