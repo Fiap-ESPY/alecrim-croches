@@ -18,6 +18,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+html{
+    scroll-behavior: smooth;
+}
 
 a {
     text-decoration: none;
@@ -37,6 +40,10 @@ h1 {
     font-weight: 300;
 }
 
+body{
+    background-color: #FFFDF3;
+}
+
 /*  MENU  */
 
 header {
@@ -46,6 +53,10 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
+    position: -webkit-sticky; /* Necessário para funcionar no Safari */
+    position: sticky;
+    top: 0;
+    z-index: 1;
 }
 
 .navbar {
@@ -242,7 +253,7 @@ header {
  
 .gallery-products-card .card-button{
    position: absolute;
-   left: 74px;
+   left: 76px;
    bottom: 15px;
    background-color: #FFDEE2;
    font-family: "QuickSand";
@@ -265,12 +276,102 @@ header {
  
 .gallery-image1{
     position: absolute ;
-    left: 0px;
-    bottom: 0px;
+    left: 300px;
+    bottom: -138px;
 }
  
 .gallery-image2{
     position: absolute ;
-    right: 0px;
-    bottom: 0px;
+    right: 300px;
+    bottom: -144px;
 }
+
+
+/*  ABOUT SECTION  */
+
+.about {
+    background-color: #FFFDF3;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 200px;
+ }
+
+ 
+.about-container {
+    width: 79vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.about-text {
+    margin: 20px 0px 46px 0px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-text h1 {
+    padding: 30px 0px;
+}
+
+.about-text p {
+    padding: 10px 0px;
+    font-family: "QuickSand";
+    font-size: 20px;
+}
+
+.about-text hr {
+    margin-top: 20px;
+    width: 292px;
+    border: 1px solid rgba(249, 149, 190, 0.50);
+}
+
+.about-section {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+
+.about-section-text {
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    gap: 30px;
+    font-family: "Quicksand";
+}
+
+
+.about-section-text h2 {
+    font-family: "Pacifico";
+    font-size: 36px;
+    font-weight: 200;
+}
+
+.about-section-quote {
+    border-left: 3px solid #F991BE;
+    height: 45px;
+    padding-left: 20px;
+    width: 100%;
+    position: relative;
+}
+
+
+.about-section-quote p {
+    font-family: "Quicksand";
+    font-size: 14px;
+}
+
+.about-section-quote-author {
+    position: absolute;
+    right: 0px;
+    bottom: -25px;
+}
+
+
