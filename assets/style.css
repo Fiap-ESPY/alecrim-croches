@@ -1,5 +1,4 @@
 /*  FONTS  */
-
 @font-face {
     font-family: "QuickSand";
     src: url("/assets/fonts/Quicksand-Regular.ttf")
@@ -19,6 +18,12 @@
     box-sizing: border-box;
 }
 
+textarea:focus, input:focus, select:focus {
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+} 
+
 a {
     text-decoration: none;
     font-family: "QuickSand";
@@ -35,6 +40,12 @@ h1 {
     color: #333333;
     line-height: 55px;
     font-weight: 300;
+}
+
+h2, p, label{
+    color: #333333;
+    font-family: "QuickSand";
+
 }
 
 /*  MENU  */
@@ -233,4 +244,165 @@ header {
     right: 0px;
     bottom: -25px;
 }
+
+/*  CONTACT SECTION  */
+
+.contact {
+    background-color: #FFFDF3 ;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
+
+ 
+.contact-container {
+    width: 79vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.contact-text {
+    margin: 20px 0px 46px 0px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-text h1 {
+    padding: 30px 0px;
+    font-family: "Pacifico";
+}
+
+.contact-text p {
+    padding: 10px 0px;
+    font-family: "QuickSand";
+    font-size: 20px;
+}
+
+.contact-text hr {
+    margin-top: 20px;
+    width: 292px;
+    border: 1px solid rgba(249, 149, 190, 0.50);
+}
+
+.contact-form-and-social-container{
+    display: flex;
+    gap: 2rem;
+}
+
+.contact-form-container{
+    background-color: white;
+    box-shadow: rgba(255, 222, 226, 0.8) 0px 4px 4px 0px;
+    padding: 26px;
+    border-radius: 8px;
+
+}
+
+.contact-form-container h2{
+    margin-bottom: 0.5rem;
+}
+
+.contact-form-container p{
+    margin-bottom: 2rem;
+}
+
+.contact-form-container label{
+    margin-bottom: 0.5rem;
+    display: block;
+}
+
+.input-container{
+    margin-bottom: 1rem;
+}
+
+.input-container input{
+    width: 100%;
+    border: #33333347 1px solid;
+    padding: 8px 12px;
+    border-radius: 4px;
+    font-family: "QuickSand";
+;
+}
+
+.textarea-container textarea{
+    height: 110px;
+    width: 100%;
+    border: #33333347 1px solid;
+    border-radius: 4px;
+    resize: none;
+    font-family: "QuickSand";
+    padding: 8px 12px;
+}
+
+
+.form-button{
+    width: 100%;
+    padding: 14px 12px;
+    margin-top: 1rem;
+    background-color: #ffdfed9c;
+    border: #f991be7d 1px solid;
+    color: #333333;
+    cursor: pointer;
+
+}
+
+.contact-social-container{
+    background-color: white;
+    box-shadow: rgba(255, 222, 226, 0.8) 0px 4px 4px 0px;
+    padding: 26px;
+    border-radius: 8px;
+}
+
+.contact-social-container h2{
+    margin-bottom: 0.5rem;
+}
+
+.contact-social-container p{
+    margin-bottom: 2rem;
+}
+
+
+.instagram-container, .whatsapp-container, .tiktok-container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    padding: 6px;
+    border-radius: 4px;
+}
+
+.instagram-container p, .whatsapp-container p, .tiktok-container p {
+    color: #333333;
+    margin-bottom: 0;
+    margin-left: 0.5rem;
+}
+
+
+.instagram-container{
+    background-color: #ff848627;
+}
+
+.whatsapp-container{
+    background-color: #c7ebb64b;
+}
+
+.tiktok-container{
+    background-color: #cec5f04b;
+}
+
+.tiktok-container img{
+    width: 32px;
+}
+
+
+
+
+
+
+/*  FOOTER  */
 
