@@ -17,6 +17,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+html{
+    scroll-behavior: smooth;
+}
 
 textarea:focus, input:focus, select:focus {
     box-shadow: 0 0 0 0;
@@ -42,6 +45,10 @@ h1 {
     font-weight: 300;
 }
 
+body{
+    background-color: #FFFDF3;
+}
+
 h2, p, label{
     color: #333333;
     font-family: "QuickSand";
@@ -60,6 +67,7 @@ header {
     position: -webkit-sticky; /* Necessário para funcionar no Safari */
     position: sticky;
     top: 0;
+    z-index: 1;
 }
 
 .navbar {
@@ -158,8 +166,139 @@ header {
     font-weight: 600;
 }
 
-/*  ABOUT SECTION  */
+/* GALLERY SECTION */
+ 
+.gallery{
+    background-color: #FFFDF3;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+ 
+.gallery-container{
+    width: 79vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+}
+ 
+.gallery-text{
+    margin: 20px 0px 23px 0px ;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+ 
+.gallery-text h1{
+    padding: 30px 0px;
+}
+.gallery-text p{
+    padding:  10px 0px;
+    font-family: "QuickSand";
+    font-size: 20px;
+}
+ 
+.gallery hr{
+    margin-top: 20px;
+    width: 292px;
+    border: 1px solid rgba(249, 149, 190, 0.50)
+}
+ 
+.gallery-products{
+    margin-top: 46px;
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+   
+}
+ 
+.gallery-products-card {
+    width: 282px;
+    height: 400px;
+    position: relative;
+    align-items: center;
+   
+   
+}
+ 
+.gallery-products-card  .image-card{
+    width: 282px;
+    height: 250px;
+    border-radius: 0;
+    background-image: url(/assets/img/galeria/galeria_buques.png);
+    background-size: cover;
+    text-align: center;
+}
+ 
+.gallery-products-card .card-text{
+    margin: 0;
+    box-shadow: 0px 5px 5px 0px rgba(219, 119, 139 , 1);
+    background-color: #ffffff;
+    height: 100px;
+    border-radius:  0px 0px 12px  12px ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+    padding-left: 16px;
+ 
+}
+ 
+.gallery-products-card .card-text h4 {
+    font-family: "QuickSand";
+    font-size: 20px;
+    color: #333333;
+}
+ 
+.gallery-products-card .card-text p {
+    font-family: "QuickSand";
+    font-weight: 400;
+    font-size: 16px;
+    color: #333333;
+}
+ 
+.gallery-products-card .card-button{
+   position: absolute;
+   left: 76px;
+   bottom: 15px;
+   background-color: #FFDEE2;
+   font-family: "QuickSand";
+   font-weight: 600;
+   font-size: 16px;
+   border: 1px solid #DB778B;
+   width: 123px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   padding: 10px;
+   border-radius: 6px ;
+}
+ 
+.gallery-products-card .card-button img{
+    position: absolute;
+    bottom: -9px;
+    right: -9px;
+}
+ 
+.gallery-image1{
+    position: absolute ;
+    left: 300px;
+    bottom: -138px;
+}
+ 
+.gallery-image2{
+    position: absolute ;
+    right: 300px;
+    bottom: -144px;
+}
 
+
+/*  ABOUT SECTION  */
 
 .about {
     background-color: #FFFDF3;
@@ -167,6 +306,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-top: 200px;
  }
 
  
