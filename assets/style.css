@@ -542,10 +542,24 @@ header {
     width: 2rem;
 }
 
+/*Footer*/
 
+footer {
+    margin-top: 7rem;
+    padding: 2rem 0;
+    background-color: #333333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 
+footer h2 {
+    font-size: 2rem;
+    color: #FFFFFF;
+    font-family: "Pacifico";
+}
 
-
-
-/*  FOOTER  */
-
+footer p {
+    color: #FFFFFF;
+}
