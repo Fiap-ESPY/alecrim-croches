@@ -11,8 +11,8 @@
 
 <body>
     <header>
-        <nav>
-            <img src="assets/img/logo/logo.png" alt="logo">
+        <nav class="navbar">
+            <img src="assets/img/logo/logo.png" alt="logo" class="navbar-logo">
 
             <ul>
                 <li><a href="#home"><img src="assets/img/menu/menu_home.svg" alt="icone-home">Home</a></li>
@@ -23,131 +23,160 @@
         </nav>
     </header>
     <main>
-        <section id="home">
-            <div>
-                <h1>Feito à mão com amor e carinho!</h1>
-                <p>Bem-vindo ao Alecrim Crochês, onde cada ponto conta uma história e cada criação vem do coração.</p>
-                <div>
-                    <a href="#gallery">Ver Galeria</a>
-                    <a href="#contact">Fale comigo</a>
+        <section id="home" class="home">
+            <div class="home-container">
+                <div class="home-text">
+                    <h1>Feito à mão com amor e carinho!</h1>
+                    <p>Bem-vindo ao Alecrim Crochês, onde cada ponto conta uma história e cada criação vem do coração.</p>
+
+                    <div class="home-buttons">
+                        <div class="gallery-button"> 
+                            <a href="#gallery">Ver Galeria</a>
+                        </div>
+                        <div class="contact-button"> 
+                            <a href="#contact">Fale comigo</a>
+                        </div>   
+                    </div>  
+                </div>
+
+                <div class="home-image">
+                    <img src="assets/img/home/home.png" alt="imagem-home" width="650" >
                 </div>
             </div>
-
-            <div>
-                <img src="assets/img/home/home.png" alt="imagem-home">
-            </div>
         </section>
-        <section id="gallery">
-            <h1> Minhas Criaçōes </h1>
-            <p>Cada item tem uma atenção especial. Cada detalhe é uma prioridade!</p>
-            <figure>
-                <img src="assets/img/galeria/galeria_buques.png" alt="Buques de crochê" width="346" height="318">
-                <figcaption>
-                    <h4> Buquês </h4>
-                    <p> Os mais queridos para datas especiais. </p>
-                </figcaption>
-                <button> Saiba mais <img src="assets/img/galeria/botao_coracao.svg"> </button>
-            </figure>
-            <figure>
-                <img src="assets/img/galeria/galeria_amigurumis.png" alt="Amigurumis de Crochê" width="346"
-                    height="318">
-                <figcaption>
-                    <h4> Amigurumis </h4>
-                    <p> Fofinhos e uma boa companhia </p>
-                </figcaption>
-                <button> Saiba mais <img src="assets/img/galeria/botao_coracao.svg"> </button>
-            </figure>
-            <figure>
-                <img src="assets/img/galeria/galeria_bolsas.png" alt="Bolsas de Crochê" width="346" height="318">
-                <figcaption>
-                    <h4> Bolsas </h4>
-                    <p> Lindas para compor o seu guarda-roupas </p>
-                </figcaption>
-                <button> Saiba mais <img src="assets/img/galeria/botao_coracao.svg"> </button>
-            </figure>
-            <img src="assets/img/galeria/galeria_croches.svg" alt="Cesto de crochês">
-            <img src="assets/img/galeria/galeria_gato.svg" alt="Gato brincando com lã">
-        </section>
-
-        <section id="about">
-            <div>
-                <h1>Sobre mim</h1>
-                <p>Minha jornada e paixão por crochê</p>
-            </div>
-            <div>
-                <img src="assets/img/sobre/profile.png" alt="Foto de Perfil" width="500" />
-            </div>
-            <div>
-                <h2>Oie, me chamo Ane!</h2>
-                <p>
-                    Minha paixão pelo crochê começou há mais de 10 anos, quando aprendi
-                    os primeiros pontos com minha avó. O que era um simples passatempo
-                    virou, com o tempo, uma verdadeira vocação.
-                </p>
-                <p>
-                    Cada peça que produzo carrega memória, afeto e cuidado. Uso
-                    materiais de alta qualidade e dedico atenção a cada ponto,
-                    garantindo não só beleza, mas também durabilidade e acabamento
-                    impecável. É assim que honro esse artesanato tão cheio de história.
-                </p>
-                <p>
-                    <i>“Cada ponto conta uma história, cada criação carrega um pedaço do
-                        meu coração.”</i>
-                </p>
-                <p>— C.S Lewis</p>
-            </div>
-        </section>
-
-        <section id="contact">
-            <div>
-                <h1>Entre em Contato</h1>
-                <p>Meus canais para tricotarmos as ideias</p>
-            </div>
-
-            <div>
-
-                <div>
-                    <h2>Me manda uma mensagem</h2>
-                    <p>Projetos complexos ou em grande escala? 
-                    Me envia um e-mail com os detalhes iniciais, que vamos 
-                    ajeitando, ponto a ponto :)</p>
-                    <div>
-                        <label>Nome</label>
-                        <input type="text" placeholder="Seu nome">
-                    </div>
-
-                    <div>
-                        <label>E-mail</label>
-                        <input type="text" placeholder="Seu e-mail">
-                    </div>
-
-                    <div>
-                        <label>Sua mensagem</label>
-                        <textarea placeholder="Escreve aqui com mais detalhes projeto que você pensou e quer encomendar :)"></textarea>
-
-                    </div>
-
-                    <button>Enviar Mensagem</button>
+        
+        <section id="gallery" class="gallery">
+            <div class="gallery-container">
+                <div class="gallery-text">
+                    <h1> Minhas Criaçōes </h1>
+                    <p>Cada item tem uma atenção especial. Cada detalhe é uma prioridade!</p>
+                    <hr>
                 </div>
-                <div>
-                    <h2>Minhas redes sociais</h2>
-                    <p>Me siga nas redes sociais para ver minhas últimas criações, trabalhos em andamento e promoções especiais.</p>
-                    
-                    <div>
-                        <img src="assets/img/contato/contato_instagram.svg" alt="Icone instagram">
-                        <p>@alecrim_croche</p>
+ 
+                <div class="gallery-products">
+                    <figure class="gallery-products-card">
+                        <img src="assets/img/galeria/galeria_buques.png" alt="Buques de crochê" class="image-card">
+                        <!-- <div class="image-card"></div>  -->
+                        <figcaption class="card-text">
+                            <h4> Buquês </h4>
+                            <p> Os mais queridos para datas especiais. </p>
+                        </figcaption>
+                        <button class="card-button"> Saiba mais <img src="assets/img/galeria/botao_coracao.svg"> </button>
+                    </figure>
+ 
+                    <figure class="gallery-products-card">
+                        <img src="assets/img/galeria/galeria_amigurumis.png" alt="Amigurumis de Crochê" class="image-card">
+                        <figcaption class="card-text">
+                            <h4> Amigurumis </h4>
+                            <p> Fofinhos e uma boa companhia </p>
+                        </figcaption>
+                        <button class="card-button" > Saiba mais <img src="assets/img/galeria/botao_coracao.svg"> </button>
+                    </figure>
+ 
+                    <figure class="gallery-products-card">
+                        <img src="assets/img/galeria/galeria_bolsas.png" alt="Bolsas de Crochê" class="image-card">
+                        <figcaption class="card-text">
+                            <h4> Bolsas </h4>
+                            <p> Lindas para compor o seu guarda-roupas </p>
+                        </figcaption>
+                        <button class="card-button"> Saiba mais <img src="assets/img/galeria/botao_coracao.svg"> </button>
+                    </figure>
+                </div>
+ 
+                <img src="assets/img/galeria/galeria_croches.svg" alt="Cesto de crochês" class="gallery-image1">
+                <img src="assets/img/galeria/galeria_gato.svg" alt="Gato brincando com lã" class="gallery-image2">
+            </div>
+        </section>
+
+        <section id="about" class="about">
+            <div class="about-container"> 
+                <div class="about-text">
+                    <h1>Sobre mim</h1>
+                    <p>Minha jornada e paixão por crochê</p>
+                    <hr> 
+                </div>
+                <div class="about-section">
+                    <img src="assets/img/sobre/profile.png" alt="Foto de Perfil" width="500" />
+                    <div class="about-section-text">
+                        <h2>Oie, me chamo Ane!</h2>
+                        <p>
+                            Minha paixão pelo crochê começou há mais de 10 anos, quando aprendi
+                            os primeiros pontos com minha avó. O que era um simples passatempo
+                            virou, com o tempo, uma verdadeira vocação.
+                        </p>
+                        <p>
+                            Cada peça que produzo carrega memória, afeto e cuidado. Uso
+                            materiais de alta qualidade e dedico atenção a cada ponto,
+                            garantindo não só beleza, mas também durabilidade e acabamento
+                            impecável. É assim que honro esse artesanato tão cheio de história.
+                        </p>
+                        <div class="about-section-quote"> 
+                            <p>
+                                <i>“Cada ponto conta uma história, cada criação carrega um pedaço do
+                                    meu coração.”</i>
+                            </p>
+                            <p class="about-section-quote-author">— C.S Lewis</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <div class="contact-container">
+                <div class="contact-text">
+                    <h1>Entre em Contato</h1>
+                    <p>Meus canais para tricotarmos as ideias</p>
+                    <hr> 
+                </div>
+
+                <div class="contact-form-and-social-container">
+                    <div class="contact-form-container">
+                        <h2>Me manda uma mensagem</h2>
+                        <p>Projetos complexos ou em grande escala? 
+                        Me envia um e-mail com os detalhes iniciais, que vamos 
+                        ajeitando, ponto a ponto :)</p>
+
+                        <form>
+                            <div class="input-container">
+                                <label>Nome</label>
+                                <input type="text" placeholder="Seu nome">
+                            </div>
+
+                            <div class="input-container">
+                                <label>E-mail</label>
+                                <input type="text" placeholder="Seu e-mail">
+                            </div>
+
+                            <div class="textarea-container">
+                                <label>Sua mensagem</label>
+                                <textarea placeholder="Escreve aqui com mais detalhes projeto que você pensou e quer encomendar :)"></textarea>
+                            </div>
+
+                            <button class="form-button">Enviar Mensagem</button>
+                        </form>
+                        
                     </div>
 
-                    <div>
-                        <img src="assets/img/contato/contato_whatsapp.svg" alt="Icone whatsapp">
-                        <p>+55 11 98875-6974</p>
-                    </div>
+                    <div class="contact-social-container">
+                        <h2>Minhas redes sociais</h2>
+                        <p>Me siga nas redes sociais para ver minhas últimas criações, trabalhos em andamento e promoções especiais.</p>
+                        
+                        <a href="https://www.instagram.com/alecrim_croche31/" class="instagram-container">
+                            <img src="assets/img/contato/contato_instagram.svg" alt="Icone instagram">
+                            <p>@alecrim_croche</p>
+                        </a>
 
-                    <div>
-                        <img src="assets/img/contato/contato_tiktok.svg" alt="Icone tiktok">
-                        <p>@alecrim_croche</p>
-                    </div>
+                        <a href="#" class="whatsapp-container">
+                            <img src="assets/img/contato/contato_whatsapp.svg" alt="Icone whatsapp">
+                            <p>+55 11 98875-6974</p>
+                        </a>
 
+                        <a href="#" class="tiktok-container">
+                            <img src="assets/img/contato/contato_tiktok.svg" alt="Icone tiktok">
+                            <p>@alecrim_croche</p>
+                        </a>
+                    </div>
                 </div>
             </div>
 
